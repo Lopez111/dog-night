@@ -1,0 +1,241 @@
+/* ----------> CSS GOES HERE <------------ */
+
+
+.one {
+  color: white;
+  background-color: #E44120;
+  position: fixed;
+  height: 600px;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.white{
+
+  position: absolute;
+  height: 560px;
+  width: 355px;
+  top: 15px;
+  left: 20px;
+  border: 3px solid white;
+}
+
+
+h1 {
+   color: #D3D3D3;
+   position: absolute;
+   top: 35px;
+   left: 135px;
+   font-family: 'Arimo', sans-serif;
+   letter-spacing: 0.1em;
+   font-size: 13px;
+}
+
+
+            @keyframes h1_fade {
+                   0% { opacity: 0; }
+                   100% { opacity: 1; }
+                  }
+
+            h1 {
+                  opacity: 0;
+                  animation: h1_fade 1s;
+                  animation-fill-mode: forwards ; /* <----- This tells the element style to remain at keyframe of 100% */
+                  animation-delay: 1s; /* <----- Sometimes its a good idea to delay the animation slightly */
+                }
+
+
+
+h2 {
+  color:white;
+  position: absolute;
+  top: 100px;
+  left: 65px;
+  font-family: 'Arimo', sans-serif;
+  word-spacing: 10px;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+}
+
+
+        @keyframes h2_fade {
+	             0% { opacity: 0; }
+	             100% { opacity: 1; }
+              }
+
+        h2 {
+            	opacity: 0;
+            	animation: h2_fade 1s;
+            	animation-fill-mode: forwards ;
+            	animation-delay: 2s;
+            }
+
+h3 {
+  color:white;
+  position: absolute;
+  top: 150px;
+  left: 125px;
+  font-family: 'Arimo', sans-serif;
+  word-spacing: 10px;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+}
+
+
+          @keyframes h3_fade {
+                 0% { opacity: 0; }
+                 100% { opacity: 1; }
+                }
+
+          h3 {
+                opacity: 0;
+                animation: h3_fade 1s;
+                animation-fill-mode: forwards ;
+                animation-delay: 2s;
+              }
+
+
+h4 {
+  color:white;
+  position: absolute;
+  top: 200px;
+  left: 85px;
+  font-family: 'Arimo', sans-serif;
+  word-spacing: 10px;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+}
+
+
+
+          @keyframes h4_fade {
+                 0% { opacity: 0; }
+                 100% { opacity: 1; }
+                }
+
+          h4 {
+                opacity: 0;
+                animation: h4_fade 1s;
+                animation-fill-mode: forwards ;
+                animation-delay: 2s;
+              }
+
+
+
+#center {
+  top: 65px;
+  left: 50px;
+  position: absolute;
+  transition: filter 0.5s;
+}
+
+
+      @keyframes bounce {
+        0%, 20%, 60%, 100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+
+        40% {
+          -webkit-transform: translateY(-20px);
+          transform: translateY(-100px);
+        }
+
+        80% {
+          -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+        }
+
+      }
+
+                        #center:hover {
+                          filter: invert(5px);
+                          transition: filter 0.5s;
+                          animation: bounce 1s;
+                        }
+
+
+h5 {
+  color:white;
+  position: absolute;
+  top: 400px;
+  left: 135px;
+  font-family: 'Arimo', sans-serif;
+  word-spacing: 10px;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+}
+
+
+
+            @keyframes h5_fade {
+                   0% { opacity: 0; }
+                   100% { opacity: 1; }
+                  }
+
+            h5 {
+                  opacity: 0;
+                  animation: h5_fade 1s;
+                  animation-fill-mode: forwards ;
+                  animation-delay: 3s;
+                }
+
+
+h6 {
+  color:white;
+  position: absolute;
+  top: 450px;
+  left: 100px;
+  font-family: 'Arimo', sans-serif;
+  word-spacing: 13px;
+  font-size: 22.5px;
+  letter-spacing: 0.2em;
+}
+
+
+              @keyframes h6_fade {
+                     0% { opacity: 0; }
+                     100% { opacity: 1; }
+                    }
+
+              h6 {
+                    opacity: 0;
+                    animation: h6_fade 1s;
+                    animation-fill-mode: forwards ;
+                    animation-delay: 3s;
+                  }
+
+p {
+  color:#D3D3D3;
+  position: absolute;
+  top: 525px;
+  left: 90px;
+  font-family: 'Arimo', sans-serif;
+  font-size: 10px;
+}
+
+
+              @keyframes p_fade {
+                     0% { opacity: 0; }
+                     100% { opacity: 1; }
+                    }
+
+              p {
+                    opacity: 0;
+                    animation: p_fade 1s;
+                    animation-fill-mode: forwards ;
+                    animation-delay: 4s;
+                  }
+
+
+.text {
+  color:#D3D3D3;
+  position: absolute;
+  top: 545px;
+  left: 150px;
+  font-family: 'Arimo', sans-serif;
+  font-size: 10px;
+}
